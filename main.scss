@@ -1,0 +1,51 @@
+$primary-color: #facc67;
+$eye-color: #000;
+
+.smiley {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: $primary-color;
+  position: relative;
+  animation: blink 2s infinite;
+
+  .eyes {
+    width: 20px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+
+  
+
+    &:first-child {
+      left: 40px;
+    }
+
+    &:last-child {
+      right: 40px;
+    }
+  }
+
+  .mouth {
+    width: 120px;
+    height: 60px;
+    border: 2px solid #000;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    background: $primary-color;
+  }
+  50% {
+    background: #fff;
+  }
+}

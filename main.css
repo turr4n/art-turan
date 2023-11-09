@@ -1,0 +1,44 @@
+.smiley {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #ffb921;
+  position: relative;
+  animation: blink 2s infinite;
+  bottom: 40%;
+  left: 40%;
+}
+.smiley .eyes {
+  width: 20px;
+  height: 30px;
+  background: #100303;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+}
+.smiley .eyes:first-child {
+  left: 40px;
+}
+.smiley .eyes:last-child {
+  right: 40px;
+}
+.smiley .mouth {
+  width: 120px;
+  height: 40px;
+  border: 2px solid #000;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes blink {
+  0%, 100% {
+    background: #facc67;
+  }
+  50% {
+    background: #fff;
+  }
+}/*# sourceMappingURL=main.css.map */
